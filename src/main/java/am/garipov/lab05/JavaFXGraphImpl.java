@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 
 public class JavaFXGraphImpl extends Graph {
     public static class JavaFxDrawer extends Application {
-        public void run() {
+        public static void run() {
             launch();
         }
 
@@ -18,7 +18,6 @@ public class JavaFXGraphImpl extends Graph {
 
     @Override
     public void drawGraph() {
-        JavaFxDrawer drawer = new JavaFxDrawer();
-        drawer.run();
+        JavaFxDrawer.run();
     }
 }
